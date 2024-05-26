@@ -93,7 +93,7 @@ pnpm dev
 
 ## 如何更新您的内容？
 
-### 更新“主页”或“探索”页面（`/` 或 `/explore`）
+### 更新“主页”或“探索”页面（`/` 或 `/Discover`）
 
 ```sh
 lib/data.ts -> dataList

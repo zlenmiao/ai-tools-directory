@@ -1,5 +1,5 @@
-import ExploreList from '../../ExploreList';
+import DiscoverList from '../../DiscoverList';
 
 export default function page({ params: { pageNum } }: { params: { pageNum: string | undefined } }) {
-  return <ExploreList pageNum={pageNum} />;
+  return <DiscoverList pageNum={pageNum} />;
 }

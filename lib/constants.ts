@@ -1,16 +1,16 @@
 export const NAV_LINKS = [
   {
     code: 'discover',
-    href: '/explore',
+    href: '/discover',
   },
   {
     code: 'submit',
     href: '/submit',
   },
-  {
-    code: 'startup',
-    href: '/startup',
-  },
+  // {
+  //   code: 'startup',
+  //   href: '/startup',
+  // },
 ];
 
 export const PAGE_SIZE = 20;

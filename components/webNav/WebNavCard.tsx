@@ -7,7 +7,7 @@ import BaseImage from '../image/BaseImage';
 
 export default function WebNavCard({ name, thumbnailUrl, title, url, content }: WebNavigationListRow) {
   return (
-    <div className='flex flex-col gap-3 rounded-[12px] bg-[#2C2D36] p-2 lg:p-5'>
+    <div className='flex flex-col gap-3 rounded-[12px] bg-white p-2 lg:p-5'>
       <Link href={`/ai/${name}`} title={title}>
         <BaseImage
           width={278}
@@ -20,14 +20,14 @@ export default function WebNavCard({ name, thumbnailUrl, title, url, content }: 
       </Link>
       <div className='flex items-center justify-between'>
         <a href={url} title={title} target='_blank' rel='noreferrer' className='hover:opacity-70'>
-          <h3 className='line-clamp-1 flex-1 text-sm font-bold lg:text-base'>{title}</h3>
+          <h3 className='line-clamp-1 flex-1 text-sm font-bold text-black lg:text-base'>{title}</h3>
         </a>
         <a href={url} title={title} target='_blank' rel='noreferrer' className='hover:opacity-70'>
           <SquareArrowOutUpRight className='size-5' />
-          <span className='sr-only'>{title}</span>
+          <span className='sr-only text-black'>{title}</span>
         </a>
       </div>
-      <p className='line-clamp-5 text-xs text-white/70 lg:text-sm'>{content}</p>
+      <p className='line-clamp-5 text-xs text-gray-600 lg:text-sm'>{content}</p>
     </div>
   );
 }

@@ -7,7 +7,7 @@ const WEB_PAGE_SIZE = 20;
 
 export const revalidate = 3600;
 
-export default async function ExploreList({ pageNum }: { pageNum?: string }) {
+export default async function DiscoverList({ pageNum }: { pageNum?: string }) {
   const currentPage = pageNum ? Number(pageNum) : 1;
 
   const res = await getWebNavigationList({
@@ -22,7 +22,7 @@ export default async function ExploreList({ pageNum }: { pageNum?: string }) {
         currentPage={currentPage}
         pageSize={WEB_PAGE_SIZE}
         total={20}
-        route='/explore'
+        route='/Discover'
         subRoute='/page'
         className='my-5 lg:my-10'
       />

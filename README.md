@@ -69,8 +69,8 @@ switch to the particular node version
 nvm use
 ```
 install packages
-```sh 
-pnpm i 
+```sh
+pnpm i
 ```
 run on dev mode
 ```sh
@@ -78,7 +78,7 @@ pnpm dev
 ```
 
 ## How to upate your content?
-### update "home" or "explore" page (`/` or `/explore`)
+### update "home" or "Discover" page (`/` or `/Discover`)
 ```sh
 lib/data.ts -> dataList
 ```
